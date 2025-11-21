@@ -1,0 +1,12 @@
+.navbar{
+    width:100%; /* pleine largeur */
+    padding: 20px 0px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* position fixe */
+    top: 0; /* toujours en haut */
+   left: 0; /* toujours à gauche */
+   background: white;   /* sinon contenu visible derrière */
+    z-index: 100;        /* même au-dessus du reste */    
+}
