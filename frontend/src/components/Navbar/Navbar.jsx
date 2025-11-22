@@ -16,7 +16,6 @@ const Navbar = () => {
             <div className='navbar-search-icon'>
                 <img src={assets.basket_icon} alt="baskets_icon image" />
                 <div className="dot"></div>
-                <img src={assets.selector_icon} alt="selector_icon image" />
             </div>
            <button>sign in</button> 
             </div>
@@ -24,4 +23,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar  /* Exportation du composant Navbar vers d'autres fichiers */

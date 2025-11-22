@@ -1,12 +1,42 @@
 .navbar{
-    width:100%; /* pleine largeur */
-    padding: 20px 0px; 
-    display: flex;
-    justify-content: space-between;
+   /* width:100%; /* pleine largeur */
+    padding: 20px 0px; /* espacement vertical */
+    display: flex;      /* aligner les éléments en ligne */
+    justify-content: space-between; /* espacer les éléments */
     align-items: center;
-    position: fixed; /* position fixe */
-    top: 0; /* toujours en haut */
-   left: 0; /* toujours à gauche */
-   background: white;   /* sinon contenu visible derrière */
-    z-index: 100;        /* même au-dessus du reste */    
+    /*position: fixed; /* position fixe */
+    /*top: 0; /* toujours en haut */
+    /*left: 0; /* toujours à gauche */   
+}   
+
+.navbar .logo{
+    width: 150px;
+}
+.navbar-menu{
+    display: flex; /* aligner les éléments en ligne */
+    gap: 20px;  /* espacement entre les éléments */
+    list-style: none; /* supprimer les puces */
+    color: #49557e; /* couleur du texte */
+    font-style: 18px; /* taille de la police */   
+}
+
+.navbar-right{
+    display: flex; /* aligner les éléments en ligne */
+    align-items: center; /* aligner les éléments verticalement */
+    gap: 40px; /* espacement entre les éléments */
+}
+
+.navbar button{
+    background: transparent; /* fond transparent */
+    font-size: 16px; /* taille de la police */
+    color: #49557e; /* couleur du texte */
+    border: 1px solid tomato; /* bordure  */
+    padding: 10px 30px; /* espacement interne */
+    border-radius: 50px; /* arrondir les coins */
+    cursor: pointer; /* curseur pointeur */
+    transition: 0,3s; /* transition */
+}
+
+.navbar button:hover{
+ background-color: #fff4f2;    
 }
