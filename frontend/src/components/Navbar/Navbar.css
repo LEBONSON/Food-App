@@ -40,3 +40,24 @@
 .navbar button:hover{
  background-color: #fff4f2;    
 }
+
+.navbar .active{
+    padding-bottom: 2px; /* il permet d'ajouter un espace en bas de l'élément actif */
+    border-bottom: 2px solid #49557e; /* il ajoute une bordure en bas de l'élément actif */
+}
+.navbar li{
+    cursor: pointer; /* curseur pointeur */
+}
+
+.navbar-search-icon{
+    position: relative; /* position relative qui veut dire que l'élément est positionné par rapport à son emplacement normal */
+}
+.navbar-search-icon .dot{
+    position: absolute; /* position absolue qui veut dire que l'élément est positionné par rapport à son premier parent positionné */
+    top: -8px; /* positionner en haut */
+    right: -8px; /* positionner à droite */
+    min-width: 10px; /* largeur */
+    min-height: 10px; /* hauteur */
+    background-color: tomato; /* couleur de fond */
+    border-radius: 5px; /* arrondir les coins */
+}

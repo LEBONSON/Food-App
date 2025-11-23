@@ -18,3 +18,13 @@ a{
   width:80%;
   margin: auto;
 }
+/* Animation pour un effet de fondu en entrée : le keyframe définit une transition de l'opacité de 0 à 1 */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

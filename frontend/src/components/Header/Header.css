@@ -1,0 +1,41 @@
+.header{
+    height: 34vw; /* il permet de definir la hauteur en fonction de la largeur de l'écran */
+    margin:30px auto; /* centrer horizontalement le header */
+    background: url('/header_img.png') no-repeat; /* il ajoute une image de fond  et empêche la répétition de l'image */
+    background-size: contain; /* l'image de fond s'adapte à la taille du conteneur */
+    position: relative; /* permet de positionner les éléments enfants par rapport à ce conteneur */
+}
+
+.header-contents{
+    position: absolute; /* permet de positionner cet élément par rapport à son conteneur parent */
+    display: flex; /* utilise le modèle de boîte flexible pour la mise en page */
+    flex-direction: column; /* les éléments enfants sont disposés en colonne */
+    align-items: start; /* aligne les éléments enfants au début de l'axe principal */
+    gap: 1.5vw; /* espace entre les éléments enfants */
+    max-width: 50%; /* limite la largeur maximale à 50% du conteneur parent */
+    bottom: 10%; /* positionne cet élément à 10% du bas du conteneur parent */
+    left: 5%; /* positionne cet élément à 5% de la gauche du conteneur parent */
+    animation: fadeIn 3s ease-in-out; /* applique l'animation de fondu en entrée sur 2 secondes avec une courbe d'accélération et de décélération */
+}   
+
+.header-contents h2{
+    font-weight: 500; /* définit le poids de la police à 500 */
+    color: white; /* définit la couleur du texte en blanc */
+    font-size: max(4.5vw, 22px); /* taille de la police responsive avec une taille minimale de 24px */
+}
+
+.header-contents p{
+    color: white; /* définit la couleur du texte en blanc */
+    font-size: 1vw; /* taille de la police en fonction de la largeur de l'écran */
+}
+
+.header-contents button{
+    border: none; /* supprime la bordure par défaut du bouton */
+    color: #747474; /* définit la couleur du texte du bouton */
+    font-weight: 500; /* définit le poids de la police à 500 */
+    padding: 1vw 2.3vw; /* ajoute un padding de 1vw en haut et en bas, et 2.3vw à gauche et à droite */
+    background: white; /* définit la couleur de fond du bouton en blanc */
+    font-size: max(1.2vw, 13px); /* taille de la police responsive avec une taille minimale de 16px */
+    border-radius: 50px; /* arrondit les coins du bouton */
+
+}

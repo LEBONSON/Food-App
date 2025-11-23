@@ -1,0 +1,46 @@
+.explore-menu{
+    display: flex; /* utilise le modèle de boîte flexible pour la mise en page */
+    flex-direction: column; /* les éléments enfants sont disposés en colonne */
+    gap: 20px; /* espace entre les éléments enfants */
+}
+
+explore-menu-text{
+    max-width: 60%; /* limite la largeur maximale à 60% du conteneur parent */
+    columns: #808080; /* définit la couleur du texte en gris */
+}
+
+.explore-menu-list{
+    display: flex; /* utilise le modèle de boîte flexible pour la mise en page */
+    justify-content: space-between; /* espace les éléments enfants de manière égale */
+    align-items: center; /* aligne les éléments enfants au centre de l'axe transversal */
+    gap: 30px; /* espace entre les éléments enfants */
+    text-align: center; /* centre le texte à l'intérieur des éléments enfants */
+    margin: 20px 0; /* ajoute une marge de 20px en haut et en bas */
+    overflow: scroll; /* ajoute une barre de défilement si le contenu dépasse la largeur du conteneur */
+}
+
+.explore-menu-list::-webkit-scrollbar{
+    display: none; /* masque la barre de défilement pour une apparence plus propre */
+}   
+
+.explore-menu-item img{
+    width: 7.5vw; /* définit la largeur de l'image en fonction de la largeur de l'écran */
+    min-width: 88px; /* définit une largeur minimale de 88px */
+    cursor: pointer; /* change le curseur en pointeur pour indiquer que l'image est cliquable */
+    border-radius: 50%; /* rend l'image circulaire */
+    transition: 0.2s ease-in-out; /* ajoute une transition douce pour les effets de survol */  
+}
+
+.explore-menu-list-item p {
+    margin-top: 10px; /* ajoute une marge de 10px en haut du paragraphe */
+    color: #747474; /* définit la couleur du texte en gris */
+    font-size: max(1.4vw, 16px); /* taille de la police responsive avec une taille minimale de 16px */
+    cursor: pointer; /* change le curseur en pointeur pour indiquer que le texte est cliquable */
+}
+
+.explore-menu hr {
+    margin: 10 px 0px; /* ajoute une marge de 10px en haut et en bas de la ligne horizontale */
+    height: 2px; /* définit la hauteur de la ligne horizontale */
+    background-color: #e2e2e2; /* définit la couleur de fond de la ligne horizontale */
+    border: none; /* supprime la bordure par défaut de la ligne horizontale */
+}
