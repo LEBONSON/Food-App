@@ -4,7 +4,12 @@
     gap: 20px; /* espace entre les éléments enfants */
 }
 
-explore-menu-text{
+.explore-menu h1{
+    color: #262626; /* définit la couleur du texte en vert foncé */
+    font-weight: 500; /* définit le poids de la police à 500 */
+}
+
+.explore-menu-text{
     max-width: 60%; /* limite la largeur maximale à 60% du conteneur parent */
     columns: #808080; /* définit la couleur du texte en gris */
 }
@@ -15,17 +20,17 @@ explore-menu-text{
     align-items: center; /* aligne les éléments enfants au centre de l'axe transversal */
     gap: 30px; /* espace entre les éléments enfants */
     text-align: center; /* centre le texte à l'intérieur des éléments enfants */
-    margin: 20px 0; /* ajoute une marge de 20px en haut et en bas */
+    margin: 20px 0px ; /* ajoute une marge de 20px en haut et en bas */
     overflow: scroll; /* ajoute une barre de défilement si le contenu dépasse la largeur du conteneur */
 }
 
 .explore-menu-list::-webkit-scrollbar{
-    display: none; /* masque la barre de défilement pour une apparence plus propre */
+   display: none; /* masque la barre de défilement pour une apparence plus propre */
 }   
 
-.explore-menu-item img{
+.explore-menu-list-item img{
     width: 7.5vw; /* définit la largeur de l'image en fonction de la largeur de l'écran */
-    min-width: 88px; /* définit une largeur minimale de 88px */
+    min-width: 80px; /* définit une largeur minimale de 80npx */
     cursor: pointer; /* change le curseur en pointeur pour indiquer que l'image est cliquable */
     border-radius: 50%; /* rend l'image circulaire */
     transition: 0.2s ease-in-out; /* ajoute une transition douce pour les effets de survol */  
