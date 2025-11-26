@@ -51,7 +51,8 @@
 }
 
 .explore-menu-list-item .active{
-border: tomato solid 4px; /* ajoute une bordure rouge tomate de 3px pour indiquer l'élément actif */
+border: tomato solid 4px; /* ajoute une bordure rouge tomate de 4px pour indiquer l'élément actif */
 padding: 2px; /* ajoute un padding de 2px autour de l'élément actif */
 
 }
+

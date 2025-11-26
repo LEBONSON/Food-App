@@ -3,9 +3,12 @@ import { createRoot } from 'react-dom/client'  // Importation de la fonction cre
 import './index.css'
 import App from './App.jsx'    // Importation du composant principal App depuis le fichier App.jsx
 import { BrowserRouter } from 'react-router-dom'
+import StoreContextProvider from './context/StoreContext.jsx'
 createRoot(document.getElementById('root')).render(   // Cible l'élément HTML avec l'ID 'root' pour y rendre l'application React
   <BrowserRouter>  {/* Composant BrowserRouter pour gérer la navigation dans l'application */}
-     <App />        {/* Rendu du composant principal App */}
+   <StoreContextProvider>  {/* Fournisseur de contexte global pour le store */}
+         <App />        {/* Rendu du composant principal App */}
+    </StoreContextProvider>
   </BrowserRouter>
 
 )
