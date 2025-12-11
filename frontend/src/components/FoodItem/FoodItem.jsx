@@ -15,9 +15,7 @@ const FoodItem = ({ id, name, price, description, image }) => {
           </div>
           <p className="food-item-desc">{description}</p>
           <p className="food-item-price">${price}</p>
-          <p>lebonson</p> {/*affiche le nom du restaurant car chaque plat est associé à un restaurant*/}
-	  <p>qctuqritest de pet</p>
-    <te><s/ttete>
+            <p>bro</p>
       </div>
     </div>
   );
