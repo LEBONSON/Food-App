@@ -1,40 +1,41 @@
-.food-item { 
-  width: 100%;
-  margin: auto;
-  border-radius: 15px;
-  box-shadow: 0px 0px 10px #00000015;
-  transition: 0.3s;
-  animation: fadeIn 1s;
+.food-item {   
+  width: 100%; /* il permette à l'élément de prendre toute la largeur de son conteneur parent */
+  max-width: 300px; /* largeur maximale de l'élément */
+  margin: auto; /* centre l'élément horizontalement */
+  border-radius: 15px; /* coins arrondis */
+  box-shadow: 0px 0px 10px #00000015; /* il permet d'ajouter une ombre portée autour de l'élément */
+  transition: 0.3s; /* transition pour les effets de survol */
+  animation: fadeIn 1s; /* animation d'apparition */
 }
 
-.food-item-img{
-    width: 100%;
-    border-radius: 15px 15px 0px 0px; 
+.food-item-img{ /* style de l'image */
+    width: 100%;  /* l'image prend toute la largeur de son conteneur parent */
+    border-radius: 15px 15px 0px 0px;  /* coins arrondis en haut */
 }
 
 .food-item-info{
-   padding: 20px;
+   padding: 20px; /* espace intérieur autour du contenu */
 }
 
 .food-item-name-rating{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
+    display: flex;  /* utilise le modèle de boîte flexible pour la mise en page */
+    justify-content: space-between; /* espace entre les éléments */
+    align-items: center;  /* aligne les éléments verticalement au centre */
+    margin-bottom: 10px;  /* espace en dessous */
 }
 
 .food-item-name-rating p{
-  font-size: 20px;
-  font-weight: 70px;
+  font-size: 20px;    /* taille de la police */
+  font-weight: 70px;  /* épaisseur de la police */
 }
 
 .food-item-name-rating img{
-  width:70px;
+  width:70px;     /* largeur de l'image */
 }
 
 .food-item-desc{
-  color: #676767;
-  font-size: 12px;
+  color: #676767; /* couleur du texte */
+  font-size: 12px;  /* taille de la police */
 }
 
 .food-item-price{
