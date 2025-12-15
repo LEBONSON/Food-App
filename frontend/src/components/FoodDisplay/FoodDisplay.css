@@ -1,15 +1,15 @@
 .food-display{
-    margin-top: 30px;
+    margin-top: 30px; /* il permet d'ajouter un espace au-dessus de l'élément */
 }
 
 .food-display h2 {
-    font-size: max(2 vw, 24px);
-    font-weight: 600px;
+    font-size: max(2 vw, 24px); /* taille de la police qui s'adapte à la largeur de l'écran */
+    font-weight: 600px;   /* épaisseur de la police */
 }
 .food-display-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    margin-top: 30px;
-    gap: 30px;
-    row-gap: 50px;
+    display: grid;      /* utilise le modèle de grille pour la mise en page pour organiser les éléments en lignes et colonnes */
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); /* crée des colonnes qui s'adaptent automatiquement à la taille de l'écran */
+    margin-top: 30px;   /* il permet d'ajouter un espace au-dessus de l'élément */
+    gap: 30px;      /* espace entre les éléments de la grille */
+    row-gap: 50px;      /* espace entre les lignes de la grille */
 }
