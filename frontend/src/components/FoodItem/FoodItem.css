@@ -39,9 +39,22 @@
 }
 
 .food-item-price{
- color:tomato;
- font-size: 22px;
- font-weight: 500;
- margin:10px 0px;
+ color:tomato; /* couleur du texte */
+ font-size: 22px; /* taille de la police */
+ font-weight: 500; /* épaisseur de la police */
+ margin:10px 0px; /* marge en haut et en bas */
 
+}
+
+.food-item-img-container{
+  position: relative; /* positionnement relatif pour permettre le positionnement absolu des éléments enfants */
+}
+
+.food-item-img-container .add{
+  position: absolute; /* positionnement absolu pour placer l'icône d'ajout */
+  bottom: 15px; /* positionnement en bas */
+  right: 15px; /* positionnement à droite */
+  width: 35px; /* largeur de l'icône */
+  cursor: pointer; /* curseur en forme de main au survol */
+  border-radius: 50%; /* icône ronde */
 }
