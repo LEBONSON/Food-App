@@ -58,3 +58,19 @@
   cursor: pointer; /* curseur en forme de main au survol */
   border-radius: 50%; /* icône ronde */
 }
+
+.food-item-conter{
+  position: absolute; /* positionnement absolu pour placer le compteur */
+  bottom: 15px; /* positionnement en bas */
+  right: 15px; /* positionnement à droite */
+  display: flex; /* utilise le modèle de boîte flexible pour la mise en page */
+  align-items: center; /* aligne les éléments verticalement au centre */
+  gap: 10px; /* espace entre les éléments */
+  padding: 6px; /* espace intérieur autour du contenu */
+  background-color: white; /* couleur de fond blanche */ 
+  border-radius: 50px; /* coins arrondis */
+}
+
+.food-item-conter img{
+  width: 22px; /* largeur des icônes */
+}

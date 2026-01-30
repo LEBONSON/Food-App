@@ -13,7 +13,7 @@ const FoodItem = ({ id, name, price, description, image }) => {
       {/* Affichage conditionnel de l'icône d'ajout ou du compteur d'items qui permet d'ajouter ou de retirer des items */}
       {!itemCount 
            ? <img className="add" onClick={() => setItemCount(prev=>prev+1)} src={assets.add_icon_white} alt="" />
-            : <div className="food-item-container">
+            : <div className="food-item-conter">
                 <img onClick={()=> setItemCount(prev=>prev-1)} src={assets.remove_icon_red} alt="" />
                 <p>{itemCount}</p>
                 <img onClick={()=> setItemCount(prev=>prev+1)} src={assets.add_icon_green} alt="" />
