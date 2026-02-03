@@ -17,9 +17,10 @@ const FoodItem = ({ id, name, price, description, image }) => {
                 <img onClick={()=> setItemCount(prev=>prev-1)} src={assets.remove_icon_red} alt="" />
                 <p>{itemCount}</p>
                 <img onClick={()=> setItemCount(prev=>prev+1)} src={assets.add_icon_green} alt="" />
-             
-              </div> 
+                   {/* Fin de l'affichage conditionnel */}
+                   <p>test d'affichage conditionnel</p>
 
+              </div> 
       }
       </div>
       <div className="food-item-info">
