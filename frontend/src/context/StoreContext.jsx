@@ -29,6 +29,9 @@ const StoreContextProvider = (props) => {
   const contextValue = {
     // ici on peut ajouter des valeurs ou des fonctions globales à partager dans l'application
     food_list,
+    carditems,
+    setC
+
   };
 
   return (
