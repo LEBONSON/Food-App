@@ -5,9 +5,9 @@ import { StoreContext } from "../../context/StoreContext";
 
 const FoodItem = ({ id, name, price, description, image }) => {
 // Gestion du nombre d'items dans le panier qui commence à 0 et prend la valeur précédente +1 à chaque clic 
-    //  const [itemCount, setItemCount] = useState(0); il permet de suivre le nombre d'items ajoutés au panier pour chaque item individuel, mais il ne gère pas le panier global de l'application. En utilisant le contexte global du StoreContext, on peut gérer le panier de manière centralisée et partager les données du panier entre tous les composants de l'application, ce qui est plus efficace que d'avoir un état local pour chaque item individuel.
+//  const [itemCount, setItemCount] = useState(0); il permet de suivre le nombre d'items ajoutés au panier pour chaque item individuel, mais il ne gère pas le panier global de l'application. En utilisant le contexte global du StoreContext, on peut gérer le panier de manière centralisée et partager les données du panier entre tous les composants de l'application, ce qui est plus efficace que d'avoir un état local pour chaque item individuel.
     
-        const {cartItems, setCartItems, addToCart, removeFromCart} = useContext(StoreContext); // il permet d'accéder aux données du panier et aux fonctions pour ajouter ou retirer des items du panier à partir du contexte global du StoreContext, ce qui permet de gérer le panier de manière centralisée dans toute l'application.
+    const {cartItems, setCartItems, addToCart, removeFromCart} = useContext(StoreContext); // il permet d'accéder aux données du panier et aux fonctions pour ajouter ou retirer des items du panier à partir du contexte global du StoreContext, ce qui permet de gérer le panier de manière centralisée dans toute l'application.
 
   return (
     <div className="food-item">
